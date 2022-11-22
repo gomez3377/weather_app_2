@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CurrentWeather = () => {
+const CurrentWeather = ({cityName}) => {
   return (
     <div className='current-weather-container'>
-        <h2>Rexburg</h2>
+        <h2>{cityName}</h2>
         <h1>19&deg;</h1>
         <h2>Mostly Cloudy</h2>
         <div className='temperatures'>

@@ -6,19 +6,18 @@ import SearchBar from "./components/SearchBar";
 
 function App() {
 
-const [data, setData] = React.useState([])
-// const url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid="
-// `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2f5145bb2c625469841af7339a460cab`
+// const [data, setData] = React.useState([])
 const [city, setCity] = React.useState("")
 // React.useEffect(() => {
-//   fetch()
+//   const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2f5145bb2c625469841af7339a460cab`
+//   fetch(url)
 //   .then(res => res.json())
-//   .then(data => setWeatherData(data))
-// })
+//   .then(data => console.log(data))
+// },[])
 const changeCity = (cityResult) => {
   setCity(cityResult)
 }
-console.log(city)
+
 
 
   return (
